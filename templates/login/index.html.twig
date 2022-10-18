@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login {% endblock %}
+
+{% block body %}
+<!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Login</h2>
+    <h3 class="fs-subtitle"></h3>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="button" name="next" class="next action-button" value="Login" />
+  </fieldset>
+
+</form>
+  {% include 'footer.html.twig' %}
+{% endblock %}
